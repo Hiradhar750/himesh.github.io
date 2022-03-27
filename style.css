@@ -1,0 +1,220 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+.container{
+  width: 107%;
+  height: 200%;
+
+  background: #42455a;
+}
+.menu {background-color: #333;
+     overflow: hidden;
+padding: 0px;
+width: 100%;
+height: 9.9%;
+}
+.menu li{
+          color: #19dafa !important;
+          float: left;
+          text-align: center;
+          padding:14px 17px;
+          text-decoration:none;
+          font-size: 19px;
+          text-align: center;
+          font-family: initial;
+         
+}
+.menu a{
+  color: #19dafa !important;
+          float: left;
+          text-align: center;
+          padding:14px 17px;
+          text-decoration:none;
+          font-size: 19px;
+          text-align: center;
+          font-family: initial;
+
+}
+ .menu li:hover
+     {background-color: #b2b1b1;
+     color: black;
+     
+     }
+     .menu li.active{background-color: #b2b1b1;
+      color: black;}
+     
+.menu ul{
+     display: inline-flex;
+     margin: 50px;
+     text-align: center;
+}
+.menu ul li{
+     list-style: none;
+     margin: 0 20px;
+     color: #b2b1b1;
+     cursor: pointer;
+}
+.logo img{
+     width: 40px;
+     height: 40px;
+     margin-top: -55px;
+     margin-right: 48px;
+
+}
+
+
+.banner{
+     width: 80%;
+     height: 70%;
+     top: 25%;
+     left: 130px;
+     position: absolute;
+     color: #fff;
+}
+.app-text{
+     width:50%;
+     float: left;
+}
+.app-text h1{
+     font-size:43px;
+     width: 640px;
+     position: relative;
+     margin-left: -85px;
+     font-family: initial;
+}
+.app-text p{
+     width: 650px;
+     font-size: 15px;
+     margin: -1px 0 30px -85px;
+     line-height:25px;
+     color: #919191;
+      /* Style the container */
+.dabba{
+        border-radius: 5px;
+           background-color: #f2f2f2;
+           padding: 20px;
+           
+         }
+   
+   /* Floating column for labels: 25% width */
+   .col-25 {
+     float: left;
+     width: 25%;
+     margin-top: 6px;
+   }
+   
+   /* Floating column for inputs: 75% width */
+   .col-75 {
+     float: left;
+     width: 75%;
+     margin-top: 6px;
+   }
+   
+   /* Clear floats after the columns */
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   
+   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 600px) {
+     .col-25, .col-75, input[type=submit] {
+       width: 100%;
+       margin-top: 0;
+     }
+   }   
+}
+.app-picture{
+    width: 50%;
+    float: right;
+    
+}
+.app-picture img{
+    width: 100%;
+    margin-top: -1330px;
+    margin-left: 0px;
+
+}
+.upload {
+     background-color: rgb(83, 86, 92); /* Green */
+     border: none;
+     color: white;
+     padding: 30px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     cursor: pointer;
+   }
+
+  /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     resize: vertical;
+   }
+   
+   /* Style the label to display next to the inputs */
+   label {
+     padding: 12px 12px 12px 0;
+     display: inline-block;
+   }
+   .form-input input {
+  display:none;
+}
+
+.form-input label {
+  display:block;
+  width:45%;
+  height:45px;
+  margin-left: 25%;
+  line-height:50px;
+  text-align:center;
+  background:#1172c2;
+  color:#fff;
+  font-size:15px;
+  font-family:"Open Sans",sans-serif;
+  text-transform:Uppercase;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+}
+   
+   /* Style the submit button */
+   /* input[type=button] { */
+  .submit{
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     float: right;
+   }
+  .img2{
+    max-width:180px;
+  }
+  input[type=file]{
+  padding:10px;
+  background:#2d2d2d;}
+  .form-input {
+    width:350px;
+    padding:20px;
+    background:#fff;
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+                3px 3px 7px rgba(94, 104, 121, 0.377);
+  }
+  .form-input img {
+    width:100%;
+    display:none;
+    margin-bottom:30px;
+  }
+  <label for="file-ip-1">Upload Image</label>
+  <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+
